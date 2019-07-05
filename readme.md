@@ -1,4 +1,4 @@
-[!(https://github.com/jhaal/DiffSolve-2D/k.png)]()
+![](https://github.com/jhaal/DiffSolve-2D/blob/master/k.png?raw=true)
 
 # 2-D Neutron Diffusion Equation Solver in Cartesian Coordinate Geometry
 
@@ -8,7 +8,7 @@
 - DiffSolve-2D.cpp
 - DESCRIPTION:steady state testbench
 - REQUIREMENTS:DiffSolve-2D.hpp,ccomp,xsec
-- BUGS:
+- BUGS: None
 - AUTHOR: Alok_Jha
 - E-mail: jhaalok1984_at_gmail.com
 - ORGANIZATION:NPCIL
