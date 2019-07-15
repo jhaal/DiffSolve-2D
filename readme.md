@@ -38,7 +38,14 @@ None
 
 ### Any Core Size
 
-Any 2-D Core size input will work. Modify in the header file
+Any 2-D Core size input will work. Modify in the header file. However, for WINDOWS machine of 32 bits, the core size smaller than 12 rows by 16 columns, the results are not correct due to 'double' and 'long double' limitations. Please check by reducing the 
+
+```
+#define F_max        1e5	 //maximum iteration
+
+#define K_max        1e5	 //maximum iteration 
+```
+in the header file. It may yield reasonably acceptable results.
 
 ### Compile
 
@@ -66,6 +73,8 @@ $ c++ DiffSolve-2D.cpp -o DiffSolve-2D && ./DiffSolve-2D
 ```shell
 $ gnuplot < plot.gp
 ```
+
+Label in the plot "thermal.txt" corrected from the earlier code where incorrect y-label is generated.
 
 
 ## Support
