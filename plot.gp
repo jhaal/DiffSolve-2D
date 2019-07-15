@@ -3,7 +3,7 @@ set term eps enhanced
 set output "fast"
 set title  "3D surface from a grid (matrix) of fast flux values"
 set xrange [0:10]
-set yrange [0:14]
+set yrange [0:10]
 set zrange [0.95:1.0]
 set dgrid3d 95,95
 set hidden3d
@@ -19,13 +19,13 @@ set term eps enhanced
 set output "thermal"
 set title  "3D surface from a grid (matrix) of thermal flux values"
 set xrange [0:10]
-set yrange [0:14]
+set yrange [0:10]
 set zrange [0.95:1.0]
 set dgrid3d 95,95
 set hidden3d
 set xlabel  "Core Dimension Along x-axis" offset 0,-1,0 rotate parallel
 set ylabel  "Core Dimension Along y-axis" offset 0,-1,0 rotate parallel
-set zlabel  "Fast Flux" offset -1,0,0 rotate parallel
+set zlabel  "Thermal Flux" offset -1,0,0 rotate parallel
 splot "thermal.txt" matrix with lines title "Normalized Thermal Flux"
 set output
 
