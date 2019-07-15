@@ -346,7 +346,7 @@ int main(void){
     gplot << "set hidden3d" << '\n' ;
     gplot << "set xlabel  " << "\"Core Dimension Along x-axis\"" << " offset 0,-1,0 rotate parallel" << '\n' ; 
     gplot << "set ylabel  " << "\"Core Dimension Along y-axis\"" << " offset 0,-1,0 rotate parallel" << '\n' ;
-    gplot << "set zlabel  " << "\"Fast Flux\"" << " offset -1,0,0 rotate parallel" << '\n' ;
+    gplot << "set zlabel  " << "\"Thermal Flux\"" << " offset -1,0,0 rotate parallel" << '\n' ;
     gplot << "splot " << "\"thermal.txt\"" << " matrix with lines title " << "\"Normalized Thermal Flux\"" << '\n' ;
     gplot << "set output" << '\n';
     gplot << endl;
