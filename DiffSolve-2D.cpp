@@ -263,7 +263,17 @@ int main(void){
       }
     // }
     cout << "\n#k_eff->\t" << k << endl;
-// }
+//
+//
+// Criticality declaration and rho calculation
+//
+if (k > 1.){
+  cout << "\n#The core assembly is supercritical.\n#rho = " << 1.-(1./k) << endl;
+}
+if (k < 1.){
+  cout << "\n#The core assembly is subcritical.\n#rho = " << 1.-(1./k) << endl;
+}
+//
 //
 // open output files to write thermal and fast flux in the files for processing
 //
