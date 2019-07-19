@@ -49,8 +49,10 @@ in the header file. It may yield reasonably acceptable results.
 
 ### Addendum
 
-- Added reactivity $\rho$ calculation in the code.
+- Added reactivity &rho; calculation in the code.
 - Added criticality declaration in the code.
+
+ 
 
 ### Compile
 
